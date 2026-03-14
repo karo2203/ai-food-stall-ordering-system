@@ -180,7 +180,7 @@ Key modules:
 
 **Name:** Karoliya Agin Doli
 **Project:** AI Powered Food Stall Ordering System
-**Role:** Frontend Developer
+**Role:** Prompt Engineer
 
 **Technologies Used**
 
