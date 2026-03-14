@@ -176,4 +176,21 @@ Key modules:
 - Swap the image URLs or gradients in `IMAGE_PRESETS` for your own photos.
 - Add simple authentication or a PIN before showing the admin panel.
 - Extend `localStorage` usage or connect to a backend API for multi‑device dashboards.
+- ## Developer
+
+**Name:** Karoliya Agin Doli
+**Project:** AI Powered Food Stall Ordering System
+**Role:** Frontend Developer
+
+**Technologies Used**
+
+* HTML
+* CSS
+* JavaScript
+* Local Storage
+* Vercel Deployment
+* GitHub
+
+**GitHub:** https://github.com/karo2203
+
 
