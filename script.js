@@ -1,4 +1,5 @@
 // Menu data
+let cart = [];
 const MENU = {
   icecreams: [
     {
@@ -548,9 +549,6 @@ function showAIRecommendation() {
 }
 
 showAIRecommendation();
-function updateCartCount(){
-  document.getElementById("cart-count").innerText = cart.length;
-}
 function updateCartCount(){
   const countElement = document.getElementById("cart-count");
   if(countElement){
