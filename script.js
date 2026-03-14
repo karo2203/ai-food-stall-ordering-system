@@ -1,5 +1,5 @@
 // Menu data
-let cart = [];
+let Cart = [];
 const MENU = {
   icecreams: [
     {
