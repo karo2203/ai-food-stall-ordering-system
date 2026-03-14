@@ -555,7 +555,6 @@ function updateCartCount(){
     countElement.innerText = cart.length;
   }
 }
-updateCartCount();
 function scrollToCart(){
   document.getElementById("cart-section").scrollIntoView({
     behavior: "smooth"
