@@ -528,5 +528,24 @@ function placeOrder() {
   cart = [];
   updateCart();
 }
+function showAIRecommendation() {
 
+  const menu = [
+    "Mini Choco Bar",
+    "Maha Choco Bar",
+    "Mango Cup",
+    "Vanilla Cup",
+    "Strawberry Cup",
+    "Chocolate Cone",
+    "Butterscotch Cone",
+    "Milk Lolly"
+  ];
+
+  const randomItem = menu[Math.floor(Math.random() * menu.length)];
+
+  document.getElementById("ai-recommendation").innerText =
+  "🤖 AI Recommendation: Customers also like " + randomItem + " 🍦";
+}
+
+showAIRecommendation();
 
