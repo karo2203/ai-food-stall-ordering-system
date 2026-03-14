@@ -1,4 +1,5 @@
 // Menu data
+let Cart = [];
 const MENU = {
   icecreams: [
     {
@@ -533,11 +534,13 @@ function showAIRecommendation() {
   const menu = [
     "Mini Choco Bar",
     "Maha Choco Bar",
-    "Mango Cup",
+    "Mango Duet",
     "Vanilla Cup",
     "Strawberry Cup",
+    "Mango Cup",
     "Chocolate Cone",
     "Butterscotch Cone",
+    "Vanilla Cone",
     "Milk Lolly"
   ];
 
@@ -545,10 +548,11 @@ function showAIRecommendation() {
 
   document.getElementById("ai-recommendation").innerText =
   "🤖 AI Recommendation: Customers also like " + randomItem + " 🍦";
+
 }
 
 showAIRecommendation();
-let Cart = [];
+
 function updateCartCount(){
   const countElement = document.getElementById("cart-count");
   if(countElement){
