@@ -558,3 +558,9 @@ function showToast(message){
     toast.classList.remove("show");
   },2000);
 }
+function addToCart(item){
+  cart.push(item);
+  updateCart();
+
+  showToast(item.name + " added to cart");
+}
