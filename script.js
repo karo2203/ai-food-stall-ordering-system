@@ -548,4 +548,13 @@ function showAIRecommendation() {
 }
 
 showAIRecommendation();
+function updateCartCount(){
+  document.getElementById("cart-count").innerText = cart.length;
+}
+updateCartCount();
+function scrollToCart(){
+  document.getElementById("cart-section").scrollIntoView({
+    behavior: "smooth"
+  });
+}
 
