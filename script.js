@@ -556,7 +556,9 @@ showAIRecommendation();
 function updateCartCount(){
   const countElement = document.getElementById("cart-count");
   if(countElement){
-    countElement.innerText = cart.length;
+    const items = Object.values(cart);
+    const count = items.reduce((sum, item) => sum + item.quantity, 0);
+    countElement.innerText = count;
   }
 }
 function scrollToCart(){
@@ -564,11 +566,14 @@ function scrollToCart(){
     behavior: "smooth"
   });
 }
-function addToCart(item){
-  cart.push(item);
-  updateCart();
-  updateCartCount();
+function addToCart(item) {
+  if (!cart[item.id]) {
+    cart[item.id] = { ...item, quantity: 0 };
+  }
+  cart[item.id].quantity += 1;
+  renderCart();
 }
+
 updateCartCount();
 
 
