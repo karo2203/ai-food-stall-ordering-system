@@ -516,4 +516,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("checkout-form");
   form.addEventListener("submit", handleCheckoutSubmit);
 });
+function generateToken() {
+  return Math.floor(Math.random() * 900) + 100;
+}
+
+function placeOrder() {
+  const token = generateToken();
+
+  alert("✅ Order Placed Successfully!\nToken Number: " + token);
+
+  cart = [];
+  updateCart();
+}
+
 
