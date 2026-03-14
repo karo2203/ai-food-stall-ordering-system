@@ -551,10 +551,24 @@ showAIRecommendation();
 function updateCartCount(){
   document.getElementById("cart-count").innerText = cart.length;
 }
+function updateCartCount(){
+  const countElement = document.getElementById("cart-count");
+  if(countElement){
+    countElement.innerText = cart.length;
+  }
+}
 updateCartCount();
 function scrollToCart(){
   document.getElementById("cart-section").scrollIntoView({
     behavior: "smooth"
   });
 }
+function addToCart(item){
+  cart.push(item);
+  updateCart();
+  updateCartCount();
+}
+updateCartCount();
+
+
 
